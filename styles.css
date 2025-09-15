@@ -1,0 +1,268 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header{
+	margin: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.title{
+	display: block;
+	text-transform: none;
+	font-size: 2rem;
+	width: 12rem;
+	line-height: 0;
+	transform-origin: left top;
+	letter-spacing: -0.04em;
+	transform: scale(1.25, 3);
+	font-weight: 800;
+}
+
+.subtitle{
+	display: block;
+	text-transform: none;
+	width:13rem;
+	font-size: 1.5rem;
+	transform-origin: left top;
+	letter-spacing: -0.04em;
+	transform: scale(1.5, 1.2);
+	font-weight: 800;
+}
+
+.subtitle span{
+	display: block;
+	transform-origin: left top;
+	transform: scale(1.1,1);
+}	
+
+.donate-button{
+	display: block;
+	padding: 0.5rem 1rem;
+	border: 0.12rem solid black;
+	border-radius: 0.5rem;
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	background-color: black;
+	cursor: pointer;
+	text-decoration: none;
+	transform-origin: right;
+	transform: scale(1.2,1);
+}
+.donate-button:hover{
+	background-color: white;
+	color: black;
+}
+
+.donate-button a:link,
+.donate-button a:visited{
+	text-decoration: none;
+	color: white;
+}
+
+.donate-button a:hover{
+	color: black;
+}
+
+.logo{
+	width: 5rem;
+}
+
+.publishing{
+	margin-left: 1rem;
+	display: flex;
+	align-items: center;
+}
+
+.publishing span{
+	width: 7rem;
+	margin-left: 1rem;
+}
+
+.info{
+	display: flex;
+	flex-direction: column;
+}
+
+a:link, a:visited{
+	color: black;
+	text-decoration: underline;
+	text-decoration-thickness: 0.12rem;
+}
+
+body{ 
+	font-family: "Noto Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	font-variation-settings:
+		"wdth" 100;
+
+	display: flex;
+	flex-direction: column;
+	min-height: 100svh;
+	justify-content: space-between;
+}
+
+h1,
+h2{
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.logo img{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+main{
+	display: flex;
+	align-items: flex-start;
+}
+
+main h2{
+	width: 100%;
+}
+
+main section{
+	margin: 2rem 1rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+.content{
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.team{
+	margin-left: 0.5rem;
+	width: 90%;
+}
+
+.team h2{
+	margin-left: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.team-container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.team-member{
+	width: calc(33.33% - 1rem);
+	margin: 0 0.5rem 1rem 0.5rem;
+	display: flex;
+	flex-direction: column;
+	font-size: 0.8rem;
+}
+
+.role{
+	text-transform: uppercase;
+}
+
+.bio{
+	margin-top: 0.5rem;
+}
+
+.issue{
+	margin-top: 1rem;
+	margin-right: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+a.issue{
+	text-decoration: none;
+}
+
+.issue img{
+	width: 10rem;
+	margin-bottom: 1rem;
+}
+
+footer{
+	margin: 0 1rem;
+}
+
+footer img{
+	height: 10rem;
+}
+
+footer section{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1rem;
+}
+
+.copyright{
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.copyright img{
+	height: 1rem;
+	margin-left: 0.25rem;
+}
+
+.credit{
+	font-size: 0.8rem;
+}
