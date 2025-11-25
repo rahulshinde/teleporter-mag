@@ -222,7 +222,6 @@ h2{
 	overflow: hidden;
 }
 #main-content img{
-	width: 6rem;
 	align-self: center;
 	margin: 0 1rem;
 }
@@ -282,6 +281,10 @@ h2{
 .bio{
 	margin-top: 0.5rem;
 }
+
+.decorator{
+		width: 3rem;
+	}
 
 .issue{
 	margin-top: 1rem;
@@ -371,6 +374,10 @@ footer section{
 		margin-bottom: 2rem;
 	}
 
+	#main-content{
+		flex-wrap: wrap;
+	}
+
 	.content{
 		width: 100%;
 		margin-left: 0;
@@ -398,17 +405,16 @@ footer section{
 		margin: 0;
 		position: fixed;
 		top: 50%;
-		width: 7vw;
+		width: 4vw;
 		transform: translateY(-50%);
-
 	}
 
 	.decorator.left{
-		left: 2rem;
+		left: 0;
 	}
 
 	.decorator.right{
-		right: 2rem;
+		right: 0;
 	}
 }
 
