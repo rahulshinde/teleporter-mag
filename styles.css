@@ -378,6 +378,10 @@ footer section{
 		flex-wrap: wrap;
 	}
 
+	#main-content section{
+		margin: 2rem auto;
+	}
+
 	.content{
 		width: 100%;
 		margin-left: 0;
