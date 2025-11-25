@@ -185,28 +185,60 @@ h2{
 	margin: 0 auto;
 }
 
-main{
+#announcement{
+	background-color: black;
+	color: white;
+	border: 2px solid black;
+	border-radius: 50%;
+	padding: 1.25vw;
+	margin: 0 5vw;
+	overflow: hidden;
 	display: flex;
 	align-items: flex-start;
+	flex-wrap: wrap;
 }
-main img{
-	width: 5rem;
+
+#announcement h2{
+	font-size: 2.25vw;
+	width: 100%;
+	letter-spacing: -0.15vw;
+	text-align: center;
+	transform: scaleX(4.5);
+	margin-bottom: 0.25rem;
+}
+
+#announcement h3{
+	font-size: 2vw;
+	padding: 0 0.5rem;
+	box-sizing: border-box;
+	width: 100%;
+	letter-spacing: -0.1vw;
+	text-align: center;
+}
+
+#main-content{
+	display: flex;
+	align-items: flex-start;
+	overflow: hidden;
+}
+#main-content img{
+	width: 6rem;
 	align-self: center;
 	margin: 0 1rem;
 }
 
-main img:nth-child(1){
+#main-content img:nth-child(1){
 	margin-right: 2rem;
 }
-main img:last-child{
+#main-content img:last-child{
 	margin-left: 2rem;
 }
 
-main h2{
+#main-content h2{
 	width: 100%;
 }
 
-main section{
+#main-content section{
 	margin: 2rem 1rem;
 	display: flex;
 	flex-direction: row;
@@ -260,11 +292,12 @@ main section{
 
 a.issue{
 	text-decoration: none;
+	font-size: 0.8rem;
 }
 
 .issue img{
+	width: 10rem !important;
 	margin: 0 0 1rem 0 !important;
-	width: 10rem;
 }
 
 footer{
